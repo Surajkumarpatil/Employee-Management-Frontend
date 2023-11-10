@@ -1,0 +1,31 @@
+<mat-toolbar class="stickyBar">
+  <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+    </button> -->
+  <button mat-icon-button class="head" routerLink="/">
+    <mat-icon fontIcon="home" class="size">home
+      </mat-icon>
+    Employee Management Portal
+  </button>
+  <!-- <button mat-menu-item routerLink="/" class="head"><mat-icon fontIcon="home"></mat-icon>Employee Management Portal</button> -->
+
+  <span class="spacer"></span>
+
+  <a mat-button routerLink="/login" routerLinkActive="active" class="head1">Login |</a>
+  <a mat-button routerLink="/sign-up" routerLinkActive="active" class="head1">Register</a>
+
+  <button mat-icon-button [matMenuTriggerFor]="afterMenu">
+    <mat-icon>account_circle
+      <mat-menu #afterMenu="matMenu" xPosition="after">
+        <button mat-menu-item routerLink="dashboard"><mat-icon fontIcon="dashboard"></mat-icon>Dashboard</button>
+        <mat-divider></mat-divider>
+        <button mat-menu-item routerLink="/view/+employee.employeeId"><mat-icon fontIcon="visibility"></mat-icon>Profile</button>
+        <mat-divider></mat-divider>
+        <button mat-menu-item><mat-icon fontIcon="lock"></mat-icon>Change Password</button>
+        <mat-divider></mat-divider>
+        <button mat-menu-item (click)=" logout()"><mat-icon fontIcon="power_settings_new"></mat-icon>Logout</button>
+      </mat-menu>
+    </mat-icon>
+  </button>
+
+</mat-toolbar>

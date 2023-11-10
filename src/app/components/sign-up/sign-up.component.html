@@ -1,0 +1,68 @@
+<div class="bootstrap-wrapper">
+  <div class="container mt">
+    <div fxLayoutAlign="center center" fxFlexFill class="main-div">
+      <mat-card fxFlex="40" class="flex center">
+        <mat-card-content class="dashboard-card-content">
+          <mat-toolbar class="toolbar">Employee Registration Form</mat-toolbar>
+          <form (ngSubmit)="register()" [formGroup]="formGroup" fxLayoutAlign="stretch" fxLayout="column" class="signup-form">
+            <mat-form-field>
+              <mat-label>Employee Id</mat-label>
+              <input formControlName="employeeId" required matInput
+                type="text">
+            </mat-form-field>
+            <mat-form-field>
+              <mat-label>First name</mat-label>
+              <input formControlName="firstName" required matInput
+                type="text">
+            </mat-form-field>
+            <mat-form-field>
+              <mat-label>Last name</mat-label>
+              <input formControlName="lastName" required matInput
+                type="text">
+            </mat-form-field>
+            <mat-form-field>
+              <mat-label>Mobile Number</mat-label>
+              <span matPrefix>+91 &nbsp;</span>
+              <input formControlName="mobileNumber" required type="tel" matInput placeholder="555-555-1234">
+              <mat-icon matSuffix>mode_edit</mat-icon>
+            </mat-form-field>
+            <div>
+              <mat-label>Gender</mat-label>
+              <mat-radio-group formControlName="gender" required
+                aria-label="Select an option">  
+                <mat-radio-button value="Male">Male</mat-radio-button>
+                <mat-radio-button value="Female">Female</mat-radio-button>
+                <mat-radio-button value="Other">Other</mat-radio-button>
+              </mat-radio-group>
+            </div>
+            <mat-form-field>
+              <mat-label>Username</mat-label>
+              <input formControlName="emailId" required matInput
+                type="email">
+            </mat-form-field>
+            <mat-form-field>
+              <mat-label>Password</mat-label>
+              <input formControlName="password" required matInput
+                type="password">
+            </mat-form-field>
+            <!-- <div>
+        <mat-label>Certification: </mat-label>
+        <input type="file">
+        <button mat-raised-button type="submit" color="primary">Upload</button>
+      </div><br> -->
+            <!-- <mat-form-field>
+        <mat-label>Upload</mat-label>
+      <input type="file">
+      <button mat-raised-button type="submit" color="primary">Upload</button>
+    </mat-form-field> -->
+            <div class="container text-center">
+              <button mat-raised-button type="submit" color="primary" style="margin-left: 10px;">Register</button>
+              <button mat-raised-button type="reset" style="margin-left: 10px;">Reset</button>
+            </div>
+          </form>
+        </mat-card-content>
+        <div class="container text-center">Already Registered? <a routerLink="/login" style="text-decoration:none;">Login</a></div>
+      </mat-card>
+    </div><br><br>
+  </div>
+</div>

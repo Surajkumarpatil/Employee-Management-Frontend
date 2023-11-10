@@ -1,0 +1,151 @@
+<div class="container">
+  <mat-card class="card">
+    <mat-card-header>
+      <mat-card-title class="title">
+        Employee Details Page
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-actions align="end">
+      <button class="edit" color="primary" mat-raised-button routerLink="/edit">Edit</button>
+    </mat-card-actions>
+    <mat-card-content class="dashboard-card-content backgraund">
+      <form >
+        <mat-toolbar class="toolbar">Basic Employee Information</mat-toolbar><br>
+        
+        <mat-form-field class="ml" appearance="outline">
+          <mat-label>EmployeeId</mat-label>
+          <input disabled="true" 
+            required matInput type="text">
+        </mat-form-field>
+
+        <mat-form-field class="ml" appearance="outline">
+          <mat-label>EmailId/Username</mat-label>
+          <input disabled="true" 
+            required matInput type="text">
+        </mat-form-field>
+
+        <mat-form-field class="ml" appearance="outline">
+          <mat-label>First Name</mat-label>
+          <input disabled="true"
+            required matInput type="text">
+        </mat-form-field>
+
+        <mat-form-field class="ml" appearance="outline">
+          <mat-label>Last name</mat-label>
+          <input disabled="true" 
+            required matInput type="text">
+        </mat-form-field>
+
+        <mat-form-field class="ml" appearance="outline">
+          <mat-label>Gender</mat-label>
+          <input disabled="true" 
+            required matInput type="text">
+        </mat-form-field>
+
+        <mat-form-field class="ml" appearance="outline">
+          <mat-label>Mobile Number</mat-label>
+          <span matPrefix>+91 &nbsp;</span>
+          <input disabled="true"  required matInput placeholder="123-456-7890">
+        </mat-form-field>
+
+        <mat-form-field class="ml example-full-width" appearance="outline">
+          <mat-label>Address</mat-label>
+          <textarea disabled="true"  matInput></textarea>
+        </mat-form-field>
+      </form>
+      <form>
+        <mat-toolbar class="toolbar">Professional Information</mat-toolbar><br>
+
+        <mat-form-field class="ml" appearance="outline">
+          <mat-label>Organization</mat-label>
+          <input disabled="true"  matInput
+            >
+        </mat-form-field>
+
+        <mat-form-field class="ml" appearance="outline">
+          <mat-label>Unit</mat-label>
+          <input disabled="true"  matInput
+            type="text">
+        </mat-form-field>
+
+        <mat-form-field class="ml" appearance="outline">
+          <mat-label>Designation</mat-label>
+          <input disabled="true"  matInput
+            type="text">
+        </mat-form-field>
+
+        <mat-form-field class="ml" appearance="outline">
+          <mat-label>JoiningDate</mat-label>
+          <input disabled="true" matInput
+            type="text">
+        </mat-form-field>
+
+        <mat-form-field class="ml" appearance="outline">
+          <mat-label>JoiningDate</mat-label>
+          <input disabled="true" matInput
+            type="text">
+        </mat-form-field>
+
+        <mat-form-field class="ml" appearance="outline">
+          <mat-label>Skills</mat-label>
+          <input disabled="true" matInput
+            type="text">
+        </mat-form-field>
+
+        <mat-form-field class="ml" appearance="outline">
+          <mat-label>Primary Skills</mat-label>
+          <input disabled="true"  matInput
+            type="text">
+        </mat-form-field>
+
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+
+
+
+
+
+<!-- <mat-expansion-panel expanded="true">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Basic Employee Information
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <mat-form-field class="ml" appearance="outline">
+    <mat-label>EmployeeId</mat-label>
+    <input disabled="true" class="box" [(ngModel)]="employee.employeeId" [ngModelOptions]="{standalone: true}"
+      required matInput type="text">
+  </mat-form-field>
+  <mat-form-field class="ml" appearance="outline">
+    <mat-label>EmailId/Username</mat-label>
+    <input disabled="true" class="box" [(ngModel)]="employee.emailId" [ngModelOptions]="{standalone: true}"
+      required matInput type="text">
+  </mat-form-field>
+  <mat-form-field class="ml" appearance="outline">
+    <mat-label>First Name</mat-label>
+    <input disabled="true" class="box" [(ngModel)]="employee.firstName" [ngModelOptions]="{standalone: true}"
+      required matInput type="text">
+  </mat-form-field>
+  <mat-form-field class="ml" appearance="outline">
+    <mat-label>Last name</mat-label>
+    <input disabled="true" class="box" [(ngModel)]="employee.lastName" [ngModelOptions]="{standalone: true}"
+      required matInput type="text">
+  </mat-form-field>
+  <mat-form-field class="ml" appearance="outline">
+    <mat-label>Gender</mat-label>
+    <input disabled="true" class="box" [(ngModel)]="employee.gender" [ngModelOptions]="{standalone: true}"
+      required matInput type="text">
+  </mat-form-field>
+  <mat-form-field class="ml" appearance="outline">
+    <mat-label>Mobile Number</mat-label>
+    <span matPrefix>+91 &nbsp;</span>
+    <input disabled="true" [(ngModel)]="employee.mobileNumber" [ngModelOptions]="{standalone: true}" required matInput placeholder="123-456-7890">
+  </mat-form-field>
+  <mat-form-field class="ml example-full-width" appearance="outline">
+    <mat-label>Address</mat-label>
+    <textarea disabled="true" matInput></textarea>
+  </mat-form-field>
+</mat-expansion-panel><br> -->

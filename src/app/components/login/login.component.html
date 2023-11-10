@@ -1,0 +1,30 @@
+
+  <div class="bootstrap-wrapper">
+    <div class="container mt">
+      <div fxLayoutAlign="center center" fxFlexFill>
+        <mat-card fxFlex="40" class="flex">
+          <mat-card-content class="dashboard-card-content">
+            <mat-toolbar class="toolbar">Login</mat-toolbar>
+          <form (ngSubmit)="login()" [formGroup]="formGroup" xLayoutAlign="stretch" fxLayout="column" class="login-form">
+            <mat-form-field>
+              <mat-label>Username</mat-label>
+              <input formControlName="emailId" required matInput type="email">
+            </mat-form-field>
+            <mat-form-field>
+              <mat-label>Password</mat-label>
+              <input formControlName="password" required matInput type="password">
+            </mat-form-field>
+            <div class="container text-center">
+              <button mat-raised-button type="submit" color="primary" style="margin-left: 10px;">Login</button>
+              <button mat-raised-button type="reset" style="margin-left: 10px;">Reset</button>
+            </div><br>
+            <div><a routerLink="f" style="text-decoration:none;">Forgot Password</a></div>
+          </form>
+
+          <!-- {{ [employee.emailId,employee.password] | json}} -->
+          </mat-card-content>
+          <div class="container text-center">Don't have account? <a routerLink="/sign-up" style="text-decoration:none;">Signup/Register</a></div>
+        </mat-card>
+      </div>
+    </div>
+  </div>

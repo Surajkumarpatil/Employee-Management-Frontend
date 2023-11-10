@@ -1,0 +1,67 @@
+.color1 {
+  color: white;
+}
+
+
+.header {
+  background: rgb(106, 131, 155);
+  color: white;
+}
+
+.margin-top {
+  margin-top: 20px;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.grid-container {
+  margin: 20px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.dashboard-card {
+  background-color: rgba(239, 242, 243, 0.459);
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* .more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+} */
+
+.dashboard-card-content {
+  text-align: center;
+}
+
+.title {
+  margin: 20px;
+  margin-left: 80px;
+  font-size: 30px;
+  width: 80%;
+  color: rgb(79, 115, 161);
+}
+
+.header1 {
+  font-size: 20px;
+  margin: 20px;
+  margin-top: 10px;
+  text-align: center;
+  color: rgb(79, 115, 161)
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+  margin: auto;
+  border: 10px;
+  max-height: 400px;
+  overflow: auto;
+}

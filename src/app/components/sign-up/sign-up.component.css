@@ -1,0 +1,32 @@
+.signup-form {
+  padding: 20px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.mt {
+  margin-top: 30px;
+  background-color: rgba(239, 242, 243, 0.459);
+
+}
+
+.center {
+  text-align: center;
+}
+
+.toolbar {
+  background: rgb(106, 131, 155);
+  color: white;
+}
+
+.flex {
+  display: flex;
+  border: 20px;
+  padding: 20px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+}

@@ -1,0 +1,15 @@
+.content{
+    height: calc(100vh - 98px);
+    margin: 16px;
+    margin-left: 32px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    font-size: 2rem;
+    color: lightgray;
+
+    background-color: rgba(239, 242, 243, 0.459);
+
+
+}
